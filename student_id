@@ -1,0 +1,119 @@
+void setup() {
+  pinMode(2, OUTPUT); //G
+  pinMode(3, OUTPUT); //F
+  pinMode(4, OUTPUT); //A
+  pinMode(5, OUTPUT); //B
+  pinMode(6, OUTPUT); //E
+  pinMode(7, OUTPUT); //D
+  pinMode(8, OUTPUT); //C
+  pinMode(9, OUTPUT); //Dot
+  pinMode(11, OUTPUT);
+  pinMode(12, OUTPUT);
+
+}
+
+void loop() {
+    //65
+    for(int i=0; i<100; i++){
+      digitalWrite(11, LOW);
+      digitalWrite(12, HIGH);
+      digitalWrite(2, HIGH);
+      digitalWrite(3, HIGH);
+      digitalWrite(4, HIGH);
+      digitalWrite(5, LOW);
+      digitalWrite(6, HIGH);
+      digitalWrite(7, HIGH);
+      digitalWrite(8, HIGH);
+      digitalWrite(9, LOW);
+      delay(5);
+      digitalWrite(11, HIGH);
+      digitalWrite(12, LOW);
+      digitalWrite(2, HIGH);
+      digitalWrite(3, HIGH);
+      digitalWrite(4, HIGH);
+      digitalWrite(5, LOW);
+      digitalWrite(6, LOW);
+      digitalWrite(7, HIGH);
+      digitalWrite(8, HIGH);
+      digitalWrite(9, LOW);
+      delay(5);
+    }
+
+    //07
+    for(int i=0; i<100; i++){
+      digitalWrite(11, LOW);
+      digitalWrite(12, HIGH);
+      digitalWrite(2, LOW);
+      digitalWrite(3, HIGH);
+      digitalWrite(4, HIGH);
+      digitalWrite(5, HIGH);
+      digitalWrite(6, HIGH);
+      digitalWrite(7, HIGH);
+      digitalWrite(8, HIGH);
+      digitalWrite(9, LOW);
+      delay(5);
+      digitalWrite(11, HIGH);
+      digitalWrite(12, LOW);
+      digitalWrite(2, LOW);
+      digitalWrite(3, LOW);
+      digitalWrite(4, HIGH);
+      digitalWrite(5, HIGH);
+      digitalWrite(6, LOW);
+      digitalWrite(7, LOW);
+      digitalWrite(8, HIGH);
+      digitalWrite(9, LOW);
+      delay(5);
+    }
+
+    //01
+    for(int i=0; i<100; i++){
+      digitalWrite(11, LOW);
+      digitalWrite(12, HIGH);
+      digitalWrite(2, LOW);
+      digitalWrite(3, HIGH);
+      digitalWrite(4, HIGH);
+      digitalWrite(5, HIGH);
+      digitalWrite(6, HIGH);
+      digitalWrite(7, HIGH);
+      digitalWrite(8, HIGH);
+      digitalWrite(9, LOW);
+      delay(5);
+      digitalWrite(11, HIGH);
+      digitalWrite(12, LOW);
+      digitalWrite(2, LOW);
+      digitalWrite(3, LOW);
+      digitalWrite(4, LOW);
+      digitalWrite(5, HIGH);
+      digitalWrite(6, LOW);
+      digitalWrite(7, LOW);
+      digitalWrite(8, HIGH);
+      digitalWrite(9, LOW);
+      delay(5);
+    }
+
+    //21
+    for(int i=0; i<100; i++){
+      digitalWrite(11, LOW);
+      digitalWrite(12, HIGH);
+      digitalWrite(2, HIGH);
+      digitalWrite(3, LOW);
+      digitalWrite(4, HIGH);
+      digitalWrite(5, HIGH);
+      digitalWrite(6, HIGH);
+      digitalWrite(7, HIGH);
+      digitalWrite(8, LOW);
+      digitalWrite(9, LOW);
+      delay(5);
+      digitalWrite(11, HIGH);
+      digitalWrite(12, LOW);
+      digitalWrite(2, LOW);
+      digitalWrite(3, LOW);
+      digitalWrite(4, LOW);
+      digitalWrite(5, HIGH);
+      digitalWrite(6, LOW);
+      digitalWrite(7, LOW);
+      digitalWrite(8, HIGH);
+      digitalWrite(9, LOW);
+      delay(5);
+    }
+}
